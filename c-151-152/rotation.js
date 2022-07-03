@@ -4,7 +4,7 @@ AFRAME.registerComponent("rotate", {
     },
     tick: function(){
         window.addEventListener("click", (e) => {
-            this.data.rotateY += 0.05;
+            this.data.rotateY += 0.005;
         })
         var rotate = this.el.getAttribute("rotation")
         rotate.y = rotate.y+this.data.rotateY;
